@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border:3px solid black; /* Agrega un borde de 3px de color negro */
+    margin: 0 20px;
     padding: 20px; /* Agrega un espacion entre las cosas y el marco que hicimos con borde  20px */
     background-color: #0F8BD8;
     color: rgb(243, 235, 235);
@@ -31,7 +32,8 @@ header {
 .nav {
     grid-area: nav;
     border:3px solid black; /* Agrega un borde de 3px de color negro */
-      background-color: #B3C01C;
+      background-color: #41a8c7;
+      margin: 0 20px;
        color: black;
 }
 nav ul {
@@ -42,13 +44,17 @@ nav ul {
 nav li:first-child {   /* Elimina el punto al primero de la lista de mi ul*/
     list-style: none;
 }
+.nav a {
+    color: rgb(56, 28, 28);
+}
 
 
 
 main {
     grid-area: main;
     display: grid;
-    gap: 20px;
+    
+    margin: 0 20px;
     
 }
 
@@ -62,11 +68,32 @@ main {
      background-color: #290230;
     color: white;
 }
+.presentacion h2 {
+    color: rgb(238, 163, 163);
+}
+
+.presentacion p {
+    color: rgb(228, 186, 186);
+}
+
+.presentacion button {
+    color: rgb(36, 5, 5);
+}
 
 
 .hobbies h2 {
     text-align: center;
+    color: rgb(128, 106, 106);
+
 }
+.hobbies {
+    background-color: #55d15f; /* verde muy suave */
+}
+.hobbies p {
+    text-align: center;
+}
+
+
 
 .explorarimg {
     width: 100px;
@@ -109,29 +136,40 @@ main {
 .sobre-mi h2 {
     text-align: center;
 }
+.sobre-mi {
+    background-color: #dcaee4; /* violeta suave */
+}
 .texto-simulado {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+
 .contacto form {
     display: flex;
     flex-direction: column;
   align-items: center;
+  color: rgb(94, 16, 16);
 }
 .contacto h2 {
     text-align: center;
+    color: rgb(87, 18, 18);
+}
+.contacto {
+    background-color: #f0c177; /* color de todo el cuadro */
 }
 
 footer {
     grid-area: footer;
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
-    padding: 20px;
-    align-items: center;
-    border-top: 1px solid black;    /* arriba */
-    border-right: 1px solid black;  /* derecha */
-   border: 1px solid black;
-    border-bottom: 0.5px solid black;
-    border-left: 1px solid black; 
+     padding: 20px;
+    margin: 0 20px;
+    background-color: #07141b;
+}
+footer p {
+    color: rgb(162, 162, 226);
+}
+footer a {
+    color: rgb(205, 205, 235);
 }
