@@ -8,7 +8,7 @@ body {
         "main main"
         "footer footer";
 
-    grid-template-rows: 100px 60px 1fr 50px;
+    grid-template-rows: 80px 60px 1fr 80px;
     grid-template-columns: 1fr 1fr;
 
     gap: 10px; /* Agrega un espacio entre las filas y columnas de 10px */
@@ -126,7 +126,12 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: space-between;
-    border:1px solid black;
+    border: 1px solid black;
     padding: 20px;
-     align-items: center;
+    align-items: center;
+    border-top: 1px solid black;    /* arriba */
+    border-right: 1px solid black;  /* derecha */
+   border: 1px solid black;
+    border-bottom: 0.5px solid black;
+    border-left: 1px solid black; 
 }
